@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../Heart-Disease-Prediction/.venv"
+		},
+		{
+			"path": "../../Heart-Disease-Prediction/data"
+		},
+		{
+			"path": "../../Heart-Disease-Prediction/models"
+		},
+		{
+			"path": "../../Heart-Disease-Prediction/notebooks"
+		},
+		{
+			"path": "../../Heart-Disease-Prediction/src"
+		}
+	]
+}
