@@ -67,17 +67,20 @@
 **Графики обучения/сравнения:**  
 `artifacts/roc_curves.png`, `artifacts/nn_train_loss.png`, `artifacts/nn_val_roc_auc.png`.
 
----
 
 ## Инференс
-Тестовый набор без таргета - на `test` выполняется только предсказание.
 
-CLI-скрипт: `src/infer.py`  
-Вход — **preprocessed** CSV (например, `data/processed/test_preprocessed.csv`), выход — `ID, prediction_proba`.
+Тестовый набор без таргета — на `test` выполняется только предсказание.
+
+**Скрипт:** `src/infer.py`  
+**Вход:** предобработанный CSV (`data/processed/test_preprocessed.csv`)  
+**Выход:** `artifacts/preds_test.csv` с колонками `ID, prediction_proba`.
 
 ```bash
-python src/infer.py \
-  --input data/processed/test_preprocessed.csv \
-  --output artifacts/preds_test.csv \
-  --models_dir models \
-  --model best     # best|logreg|random_forest|neural_net
+# Предусловия (универсально для Windows/macOS/Linux)
+git lfs pull
+pip install -r requirements.txt
+python -c "import os; os.makedirs('artifacts', exist_ok=True)"
+
+# Запуск инференса (универсально)
+python src/infer.py --input data/processed/test_preprocessed.csv --output artifacts/preds_test.csv --models_dir models --model best
