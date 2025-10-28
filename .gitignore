@@ -4,7 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 .DS_Store
-data/raw/
 
 *.code-workspace
 .vscode/
