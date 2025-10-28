@@ -8,3 +8,6 @@ data/raw/
 
 *.code-workspace
 .vscode/
+
+*.code-workspace
+.vscode/
