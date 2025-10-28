@@ -82,5 +82,5 @@ git lfs pull
 pip install -r requirements.txt
 python -c "import os; os.makedirs('artifacts', exist_ok=True)"
 
-# Запуск инференса (универсально)
+# Запуск инференса
 python src/infer.py --input data/processed/test_preprocessed.csv --output artifacts/preds_test.csv --models_dir models --model best
