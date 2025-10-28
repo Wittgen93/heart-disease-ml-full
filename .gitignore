@@ -11,3 +11,6 @@ data/raw/
 
 *.code-workspace
 .vscode/
+
+Install.txt
+INSTALL.md
